@@ -1,4 +1,4 @@
-name: booru-tagger
+name: wd14tagger
 channels:
   - pytorch
   - defaults
