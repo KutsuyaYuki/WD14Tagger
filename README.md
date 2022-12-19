@@ -24,5 +24,11 @@ Automatically tag images with booru tags.
   --caption_extension .txt
 ```
 
-Change input to the folder where your images are located.
+Change input to the folder where your images are located. For example, if they are located in a folder called images on your desktop:
 
+```bash
+  python tag_images_by_wd14_tagger.py \
+  ~/Desktop/images \
+  --batch_size 4 \
+  --caption_extension .txt
+```
