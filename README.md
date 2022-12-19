@@ -4,8 +4,6 @@ Automatically tag images with booru tags.
 
 ## Installation
 
-Install my-project with npm
-
 ```bash
   git clone https://github.com/KutsuyaYuki/WD14Tagger
   cd WD14Tagger
