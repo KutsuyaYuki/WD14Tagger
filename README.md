@@ -1,6 +1,9 @@
+
 # WD14Tagger
 
 Automatically tag images with booru tags.
+
+
 
 ## Installation
 
@@ -12,3 +15,14 @@ Automatically tag images with booru tags.
   pip install -r requirements.txt
 ```
     
+## Usage/Examples
+
+```bash
+  python tag_images_by_wd14_tagger.py \
+  input \
+  --batch_size 4 \
+  --caption_extension .txt
+```
+
+Change input to the folder where your images are located.
+
