@@ -6,3 +6,5 @@ opencv-python
 einops
 pytorch_lightning
 safetensors
+tensorflow
+diffusers[torch]==0.10.2

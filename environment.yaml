@@ -6,8 +6,3 @@ dependencies:
   - git
   - python=3.8.10
   - pip=20.3
-  - pip:
-    - diffusers[torch]==0.10.2
-    - safetensors
-    - tensorflow
-    - opencv-python
