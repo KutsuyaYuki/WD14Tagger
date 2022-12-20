@@ -3,7 +3,14 @@
 
 Automatically tag images with booru tags.
 
+## Requirements
 
+This project requires cudnn 8 to properly use the GPU.
+
+On Arch:
+```bash
+  sudo pacman -S cudnn
+```
 
 ## Installation
 
