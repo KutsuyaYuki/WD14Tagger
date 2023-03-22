@@ -72,7 +72,7 @@ def main(args):
       # Everything else is tags: pick any where prediction confidence > threshold
       tag_text = ""
       for i, p in enumerate(prob[4:]):                # numpyとか使うのが良いけど、まあそれほど数も多くないのでループで
-        if p >= args.thresh:
+        if p >= args.thresh and i < len(tags):
           tag_text += ", " + tags[i]
 
       if len(tag_text) > 0:
