@@ -16,7 +16,7 @@ from huggingface_hub import hf_hub_download
 # from wd14 tagger
 IMAGE_SIZE = 448
 
-WD14_TAGGER_REPO = 'SmilingWolf/wd-v1-4-vit-tagger'
+WD14_TAGGER_REPO = 'SmilingWolf/wd-v1-4-convnextv2-tagger-v2'
 FILES = ["keras_metadata.pb", "saved_model.pb", "selected_tags.csv"]
 SUB_DIR = "variables"
 SUB_DIR_FILES = ["variables.data-00000-of-00001", "variables.index"]
@@ -72,7 +72,7 @@ def main(args):
       # Everything else is tags: pick any where prediction confidence > threshold
       tag_text = ""
       for i, p in enumerate(prob[4:]):                # numpyとか使うのが良いけど、まあそれほど数も多くないのでループで
-        if p >= args.thresh:
+        if p >= args.thresh and i < len(tags):
           tag_text += ", " + tags[i]
 
       if len(tag_text) > 0:
